@@ -1,10 +1,10 @@
 //complete this code
 class Animal {
-	constructor(species){
-		this.species=species
+	constructor(spe){
+		this._species=spe
 	}
-	get species(){return this.species}
-	makeSound(){`The &{this.species} makes a sound`}
+	get species(){return this._species}
+	makeSound(){console.log(`The ${this._species} makes a sound`)}
 }
 
 class Dog extends Animal {
